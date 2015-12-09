@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<%= image_tag @plaimage.image_url %>
+<p>
+  <strong>Latitude:</strong>
+  <%= @plaimage.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @plaimage.longitude %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @plaimage.description %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @plaimage.comment %>
+</p>
+
+<%= link_to 'Edit', edit_plaimage_path(@plaimage), class: "btn btn-link" %> |
+<%= link_to 'Back', plaimages_path, class: "btn btn-link" %>
